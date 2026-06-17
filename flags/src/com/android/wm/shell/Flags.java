@@ -77,7 +77,7 @@ public final class Flags {
 
     public static boolean enableBubbleAnything() {
         
-        return FEATURE_FLAGS.enableBubbleAnything();
+        return true;
     }
 
 
@@ -131,7 +131,7 @@ public final class Flags {
 
     public static boolean enableCreateAnyBubble() {
         
-        return FEATURE_FLAGS.enableCreateAnyBubble();
+        return true;
     }
 
 

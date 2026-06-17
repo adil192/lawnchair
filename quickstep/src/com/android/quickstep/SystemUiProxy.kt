@@ -712,6 +712,7 @@ class SystemUiProxy @Inject constructor(@ApplicationContext private val context:
         bubbleBarLocation: BubbleBarLocation? = null,
     ) =
         executeWithErrorLog({ "Failed call showAppBubble" }) {
+            assert(bubbles != null, { "bubbles is null. quickswitch issue?" })
             bubbles?.showAppBubble(intent, user, bubbleBarLocation)
         }
 
